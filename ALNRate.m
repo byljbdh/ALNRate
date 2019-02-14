@@ -301,7 +301,7 @@ static ALNRate *sharedInstance = nil;
 - (NSDate *)aNewWeekStartDate{
     return [[NSUserDefaults standardUserDefaults] objectForKey:aNewWeekStartDateKey];
 }
-- (void)setaNewWeekStartDate:(NSDate *)aNewWeekStartDate{
+- (void)setANewWeekStartDate:(NSDate *)aNewWeekStartDate{
     [[NSUserDefaults standardUserDefaults] setObject:aNewWeekStartDate forKey:aNewWeekStartDateKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
@@ -336,7 +336,7 @@ static ALNRate *sharedInstance = nil;
 - (NSInteger)usesCountAfterDecline{
     return [[NSUserDefaults standardUserDefaults] integerForKey:usesCountAfterDeclineKey];
 }
-- (void)setusesCountAfterDecline:(NSInteger)usesCountAfterDecline{
+- (void)setUsesCountAfterDecline:(NSInteger)usesCountAfterDecline{
     [[NSUserDefaults standardUserDefaults] setInteger:usesCountAfterDecline forKey:usesCountAfterDeclineKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
